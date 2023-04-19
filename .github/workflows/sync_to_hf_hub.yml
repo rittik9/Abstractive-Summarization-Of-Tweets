@@ -17,4 +17,5 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: git branch -m main
         run: git push --force https://rittik9:$HF_TOKEN@huggingface.co/spaces/rittik9/summarization-app main
